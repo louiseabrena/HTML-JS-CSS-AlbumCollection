@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="css/albumcollection.css" />
+    <script src="js/albumcollection.js"></script>
+    <title>Louise's Album Collection</title>
+  </head>
+  <body>
+    <header id="albumCollection">
+      <h1>Your Album Collection</h1>
+    </header>
+    <!-- ============= Hard-coded albums ============= ---->
+    <!-- ============= Hard-coded albums ============= ---->
+    <div id="albumgallery">
+      <figure>
+        <img
+          id="album1"
+          src="img/album1.png"
+          width="150px"
+          alt="thursday's child album cover"
+        />
+        <div id="firstAlbum">
+          <figcaption>Title: Minisode 2 - Thursday's Child</figcaption>
+          <figcaption>Artist: Tomorrow X Together</figcaption>
+          <figcaption>Genre: RNB/Soul, Korea Dance/Electronic</figcaption>
+        </div>
+      </figure>
+      <figure>
+        <img
+          id="album2"
+          src="img/album2.jpeg"
+          width="150px"
+          alt="Fight or Escape album cover"
+        />
+        <div id="secAlbum">
+          <figcaption>Title: The Chaos Chapter: Fight or Escape</figcaption>
+          <figcaption>Artist: Tomorrow X Together</figcaption>
+          <figcaption>
+            Genre: RNB/Soul, Korea Dance/Electronic, Hip-Hop/Rap
+          </figcaption>
+        </div>
+      </figure>
+      <figure>
+        <img
+          id="album3"
+          src="img/album3.jpeg"
+          width="150px"
+          alt="blue hour album cover"
+        />
+        <div id="thirdAlbum">
+          <figcaption>Title: Minisode 1: Blue Hour</figcaption>
+          <figcaption>Artist: Tomorrow X Together</figcaption>
+          <figcaption>
+            Genre: Korean Rock/Alt, Korea Dance/Electronic
+          </figcaption>
+        </div>
+      </figure>
+    </div>
+        <button
+      id="addAlbum"
+      value="Add your album">
+      Add your album
+    </button>
+    <br/>
+</br/>
+    <!-- ============= FORM TO GET THE ALBUM ============= ---->
+    <!-- ============= FORM TO GET THE ALBUM ============= ---->
+    <section id="form">
+      <form name="albumForm" action="#" method="get">
+        <fieldset class id="formAlbum">
+          <legend>Add your album!</legend>
+          <!-- ========== Get the album title ========== -->
+          <p>
+            <label for="alTitle">Title of the album: </label>
+            <input type="text" id="alTitle" name="al_Title" />
+          </p>
+          <!-- ========== Get the artist of the album ========== -->
+          <p>
+            <label for="alArtist">Artist of the album: </label>
+            <input type="text" id="alArtist" name="al_Artist" />
+          </p>
+          <!-- ========== Get the genre of the album ========== -->
+          <p>
+            <label for="alGenre">Genre of the album: </label>
+            <input type="text" id="alGenre" name="al_Genre" />
+          </p>
+          <!-- ========== Get the photo card of the album ========== -->
+          <label for="alPhotoCard">Photocard of the album:</label>
+          <select name="alPhotoCard" id="al_PC">
+            <option value="X">CHOOSE ONE</option>
+            <option value="Album Cover">Album Cover</option>
+            <option value="Solo Photo">Solo Photo</option>
+            <option value="Group Photo">Group Photo</option>
+            <option value="Special Photocard">Special Photocard</option>
+            <option value="Subunit Photo">Subunit Photo</option>
+          </select>
+          <div id="pcgallery">
+            <figure>
+              <img
+                id="albumpc"
+                src="img/albumcover.jpeg"
+                width="150px"
+                alt="Eternity purple Cover"
+              />
+              <figcaption>Album Cover</figcaption>
+            </figure>
+            <figure>
+              <img
+                id="solopc"
+                src="img/solo.png"
+                width="150px"
+                alt="Man with stickers on face and finger posing"
+              />
+              <figcaption>Solo Photo</figcaption>
+            </figure>
+            <figure>
+              <img
+                id="grouppc"
+                src="img/group.png"
+                width="150px"
+                alt="5 men standing and looking at the camera"
+              />
+              <figcaption>Group Photo</figcaption>
+            </figure>
+            <figure>
+              <img
+                id="specialpc"
+                src="img/special.png"
+                width="150px"
+                alt="id of one man named choi yeonjun"
+              />
+              <figcaption>Special Photocard</figcaption>
+            </figure>
+            <figure>
+              <img
+                id="subpc"
+                src="img/subunit.png"
+                width="150px"
+                alt="two men posing in a selfie"
+              />
+              <figcaption>Subunit Photo</figcaption>
+            </figure>
+          </div>
+          <p>
+            <input type="submit" value="Submit Your Album" />
+          </p>
+        </fieldset>
+      </form>
+    </section>
+    <!--=============== RESULTS SECTION ============== -->
+    <!-- <section id="allAlbum"> -->
+      <!-- <div id="resultGallery">
+        <figure>
+          <img
+            id="result1"
+            src="img/album1.png"
+            width="150px"
+            alt="thursday's child album cover"
+          />
+          <div id="firstResult">
+            <figcaption>Title: Minisode 2 - Thursday's Child</figcaption>
+            <figcaption>Artist: Tomorrow X Together</figcaption>
+            <figcaption>Genre: RNB/Soul, Korea Dance/Electronic</figcaption>
+          </div>
+        </figure>
+        <figure>
+          <img
+            id="result2"
+            src="img/album2.jpeg"
+            width="150px"
+            alt="Fight or Escape album cover"
+          />
+          <div id="secResult">
+            <figcaption>Title: The Chaos Chapter: Fight or Escape</figcaption>
+            <figcaption>Artist: Tomorrow X Together</figcaption>
+            <figcaption>
+              Genre: RNB/Soul, Korea Dance/Electronic, Hip-Hop/Rap
+            </figcaption>
+          </div>
+        </figure> -->
+        <!-- <figure>
+          <img
+            id="result3"
+            src="img/album3.jpeg"
+            width="150px"
+            alt="blue hour album cover"
+          />
+          <div id="thirdResult">
+            <figcaption>Title: Minisode 1: Blue Hour</figcaption>
+            <figcaption>Artist: Tomorrow X Together</figcaption>
+            <figcaption>
+              Genre: Korean Rock/Alt, Korea Dance/Electronic
+            </figcaption>
+          </div>
+        </figure> -->
+        <!-- <figure>
+          <img id="result4" src="img/solo.png" width="150px" />
+          <div id="fourthResult">
+            <figcaption>Title: <span id="result_title"></span></figcaption>
+            <figcaption>Artist: <span id="result_artist"></span></figcaption>
+            <figcaption>Genre: <span id="result_genre"></span></figcaption>
+          </div>
+        </figure>
+      </div> --->
+      <button id="addNextAlbum" value="Add your next album">Add your next album</button>
+    <button
+      id="refreshAlbum"
+      value="Refresh your
+        Collection">
+      Refresh your Collection
+    </button> 
+  </body>
+</html>
